@@ -11,12 +11,12 @@ export default {
 </script>
 
 <template>
-    <header>        
-        <div class="container">
+    <div class="container">        
+        <header>
             <div class="header-top">
                 <img src="../assets/img/footer-logo-1.png" alt="">
                 <ul>
-                    <li v-for="(element, index) in elements" :key="index">{{ element }}</li>
+                    <li v-for="(element, index) in elements" :key="index"><a href="">{{ element }}</a></li>
                 </ul>
                 <div class="icons">
                     <i class="fa-solid fa-magnifying-glass fa-rotate-90"></i>
@@ -28,9 +28,8 @@ export default {
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis aspernatur ipsa amet, quidem accusantium repudiandae cum odio alias reprehenderit qui debitis voluptatem molestiae nostrum incidunt neque quam cumque rem magni!</p>
                 <button>REGISTER NOW</button>
             </div>
-        </div>
-        
-    </header>
+        </header>        
+    </div>
  
 </template>
 
@@ -38,11 +37,12 @@ export default {
 
 
 header{
-    color: white;
-    background-color: aquamarine;
+    color: white;    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: var(--header-height);
+    
     
 }
 
@@ -50,6 +50,8 @@ header{
 .header-top {
     display: flex;
     justify-content: space-between;
+    height: 50px;
+    padding-top: 1rem;
 }
 
 ul {
@@ -64,10 +66,20 @@ ul {
     align-items: center; 
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 // header body
-.header-body {
-    padding: 10rem;
-    text-align: center;
+.header-body {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(var(--header-height) - 50px);
+    
+    
 }
 
 p {

@@ -6,13 +6,14 @@
 }
 
 :root {
-    --azure: #40C4FF
+    --azure: #40C4FF;
+    --header-height: 500px
 
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem;
+    width: 95%;   
     
 }
