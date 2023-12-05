@@ -75,7 +75,16 @@ export default {
                 </div>
             </div>
             <hr>
-            
+            <div class="footer-bottom">
+                Copyrights 2017 ©Mikado Themes
+                <div class="social">
+                    <span>CALL +44 300 303 0266</SPAN>
+                    <span>FOLLOW US</span>
+                    <span><i class="fa-brands fa-twitter"></i></span>
+                    <span><i class="fa-brands fa-instagram"></i></span>
+                    <span><i class="fa-brands fa-facebook-f"></i></span>
+                </div>
+            </div>
 
             
         </div>
@@ -127,6 +136,17 @@ li {
     flex-direction: column;
     justify-content: space-between; /* o altre opzioni come space-around, space-evenly, center, etc. */
     height: 200px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+.social{ 
+    gap: 1rem;
+    display: flex;
+
 }
 
 </style>
