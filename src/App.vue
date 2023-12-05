@@ -1,13 +1,14 @@
 <script>
-import AppHeader from "./components/AppHeader.vue"
-import Carousel from "./components/Carousel.vue"
+import AppFooter from "./components/AppFooter.vue";
+import AppHeader from "./components/AppHeader.vue";
+import Carousel from "./components/Carousel.vue";
 
 export default {
   components: {
-      AppHeader,
-      Carousel,
-      
-    },    
+    AppHeader,
+    Carousel,
+    AppFooter
+},    
   
 }
 
@@ -21,6 +22,7 @@ export default {
     </div>
     
   </div>
+  <AppFooter/>
   
 </template>
 
@@ -39,7 +41,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Imposta un indice z inferiore per il carosello */
+  z-index: -1;
 }
 
 </style>

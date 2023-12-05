@@ -7,8 +7,12 @@
 
 :root {
     --azure: #40C4FF;
-    --header-height: 500px
+    --header-height: 500px;
+    --background-footer: #222222;
 
+}
+img {
+    max-width: 100%;
 }
 
 .container {
