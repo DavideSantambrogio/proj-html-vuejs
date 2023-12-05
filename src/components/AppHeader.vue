@@ -69,7 +69,11 @@ ul {
 a {
     text-decoration: none;
     color: white;
+    &:hover {
+      color: var(--azure);
+    }
 }
+
 
 // header body
 .header-body {    
@@ -78,8 +82,12 @@ a {
     align-items: center;
     justify-content: center;
     height: calc(var(--header-height) - 50px);
-    
-    
+    width: 80%;
+    margin: 0 auto;    
+}
+
+h1 {
+    font-size: 4rem;
 }
 
 p {

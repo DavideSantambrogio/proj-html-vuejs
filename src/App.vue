@@ -1,13 +1,15 @@
 <script>
 import AppFooter from "./components/AppFooter.vue";
 import AppHeader from "./components/AppHeader.vue";
+import AppToutoring from "./components/AppToutoring.vue";
 import Carousel from "./components/Carousel.vue";
 
 export default {
   components: {
     AppHeader,
     Carousel,
-    AppFooter
+    AppFooter,
+    AppToutoring
 },    
   
 }
@@ -19,11 +21,11 @@ export default {
     <AppHeader />
     <div class="carousel">
       <Carousel />
-    </div>
-    
-  </div>
+    </div>    
+  </div>  
+  <AppToutoring/>
+
   <AppFooter/>
-  
 </template>
 
 <style lang="scss" >
