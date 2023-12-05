@@ -5,6 +5,7 @@ import AppFooter from "./components/AppFooter.vue";
 import AppHeader from "./components/AppHeader.vue";
 import AppToutoring from "./components/AppToutoring.vue";
 import CarouselHeader from "./components/CarouselHeader.vue";
+import AppPossibilities from "./components/AppPossibilities.vue";
 
 export default {
   components: {
@@ -13,7 +14,8 @@ export default {
     AppFooter,
     AppToutoring,
     AppEmpowering,
-    AppTestimonial
+    AppTestimonial,
+    AppPossibilities
 },    
   
 }
@@ -30,7 +32,7 @@ export default {
   <AppToutoring/>
   <AppEmpowering/>
   <AppTestimonial/>
-  
+  <AppPossibilities/>
   <AppFooter/>
 </template>
 

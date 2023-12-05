@@ -12,7 +12,7 @@ export default {
     };
   },
   mounted() {
-    setInterval(this.nextSlide, 3000); // Cambia immagine ogni 3 secondi
+    setInterval(this.nextSlide, 4000); // Cambia immagine ogni 3 secondi
   },
   methods: {
     nextSlide() {

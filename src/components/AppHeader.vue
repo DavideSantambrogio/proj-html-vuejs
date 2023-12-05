@@ -86,19 +86,23 @@ a {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 p {
     padding: 2rem;
+    font-size: var(--primary-font-size);
 } 
 
 button {
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 3rem;
     color: white;
     background-color: var(--azure);
     border: none;
     font-weight: bold;
+    font-size: 1rem;
+    
+
 }
 
 
