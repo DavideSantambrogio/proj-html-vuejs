@@ -1,4 +1,5 @@
 <script>
+import AppEmpowering from "./components/AppEmpowering.vue";
 import AppFooter from "./components/AppFooter.vue";
 import AppHeader from "./components/AppHeader.vue";
 import AppToutoring from "./components/AppToutoring.vue";
@@ -9,7 +10,8 @@ export default {
     AppHeader,
     Carousel,
     AppFooter,
-    AppToutoring
+    AppToutoring,
+    AppEmpowering
 },    
   
 }
@@ -24,6 +26,7 @@ export default {
     </div>    
   </div>  
   <AppToutoring/>
+  <AppEmpowering/>
 
   <AppFooter/>
 </template>
