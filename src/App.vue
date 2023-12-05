@@ -1,17 +1,19 @@
 <script>
+import AppTestimonial from "./components/AppTestimonial.vue";
 import AppEmpowering from "./components/AppEmpowering.vue";
 import AppFooter from "./components/AppFooter.vue";
 import AppHeader from "./components/AppHeader.vue";
 import AppToutoring from "./components/AppToutoring.vue";
-import Carousel from "./components/Carousel.vue";
+import CarouselHeader from "./components/CarouselHeader.vue";
 
 export default {
   components: {
     AppHeader,
-    Carousel,
+    CarouselHeader,
     AppFooter,
     AppToutoring,
-    AppEmpowering
+    AppEmpowering,
+    AppTestimonial
 },    
   
 }
@@ -22,11 +24,12 @@ export default {
   <div class="header">
     <AppHeader />
     <div class="carousel">
-      <Carousel />
+      <CarouselHeader />
     </div>    
   </div>  
   <AppToutoring/>
   <AppEmpowering/>
+  <AppTestimonial/>
 
   <AppFooter/>
 </template>
