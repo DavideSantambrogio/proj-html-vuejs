@@ -30,7 +30,7 @@ export default {
   <AppToutoring/>
   <AppEmpowering/>
   <AppTestimonial/>
-
+  
   <AppFooter/>
 </template>
 

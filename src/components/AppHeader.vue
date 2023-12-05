@@ -23,7 +23,7 @@ export default {
                     <i class="fa-solid fa-bag-shopping"></i>
                     <i class="fa-solid fa-bars"></i></div>
             </div>
-            <div class="header-body">
+            <div class="header-body small-container">
                 <h1>Contemporary Ideas</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis aspernatur ipsa amet, quidem accusantium repudiandae cum odio alias reprehenderit qui debitis voluptatem molestiae nostrum incidunt neque quam cumque rem magni!</p>
                 <button>REGISTER NOW</button>
@@ -81,8 +81,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(var(--header-height) - 50px);
-    width: 80%;
+    height: calc(var(--header-height) - 50px);   
     margin: 0 auto;    
 }
 
