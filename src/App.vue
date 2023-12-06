@@ -8,6 +8,7 @@ import CarouselHeader from "./components/CarouselHeader.vue";
 import AppPossibilities from "./components/AppPossibilities.vue";
 import AppCourses from "./components/AppCourses.vue";
 import AppPlans from "./components/AppPlans.vue";
+import AppPartner from "./components/AppPartner.vue";
 
 export default {
   components: {
@@ -19,7 +20,8 @@ export default {
     AppTestimonial,
     AppPossibilities,
     AppCourses,
-    AppPlans
+    AppPlans,
+    AppPartner
 },    
   
 }
@@ -39,6 +41,7 @@ export default {
   <AppPossibilities/>
   <AppCourses/>
   <AppPlans/>
+  <AppPartner/>
   <AppFooter/>
 </template>
 
