@@ -91,23 +91,97 @@ export default {
 
 
 <template>
-    <div>
-        <div v-for="(element, index) in elements" :key="index">
-            <h2 @click="toggleVisibility(index)">{{ element.title }}</h2>
-            <div v-show="currentVisibleIndex === index">                
-                <p>{{ element.description }}</p>
-                <ul>
-                    <li v-for="(possibility, possibilityIndex) in element.possibilities" :key="possibilityIndex">
-                    {{ possibility }}
-                    </li>
-                </ul>
-                <img :src="element.tabs" alt="Icon">
+    <section class="container">        
+        <div v-for="(element, index) in elements" :key="element.title">
+            <div class="possibility">
+                <div class="title" :class="{ 'active': currentVisibleIndex === index }" @click="toggleVisibility(index)">
+                    <h2 >{{ element.title }}</h2>
+                </div>
                 
+                <div class="description" v-show="currentVisibleIndex === index"> 
+                    <div>                    
+                        <h3>{{ element.title }}</h3>               
+                        <p>{{ element.description }}</p>
+                    </div>    
+                    <div class="list">    
+                        <ul>
+                            <li v-for="(possibility, possibilityIndex) in element.possibilities" :key="possibilityIndex">
+                                <i class="fa-solid fa-check"></i>{{ possibility }}
+                            </li>
+                        </ul>
+                        <img :src="element.tabs" alt="Icon"> 
+                    </div>
+                                      
+                </div>
             </div>
-        </div>
-    </div>
-  </template>
+        </div>        
+    </section>
+</template>
   
 
 <style scoped lang="scss">
+
+section {
+    position: relative;
+    padding: 7rem 0;
+}
+
+
+.possibility {
+    display: flex;
+}    
+.title {
+    width: 330px;    
+    border: 1px solid var(--txt-color);
+    padding: 2rem;
+    color: var(--txt-color);
+    
+}
+.active {
+    color: var(--azure);
+    border-left:7px solid var(--azure);
+    background-color: var(--card-background);
+}
+
+    // description
+.description {
+    position: absolute;
+    left: 400px;
+    top: 7rem;
+    
+}
+h3 {
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+p, ul {
+    color: var(--txt-color);
+    font-size: var(--primary-font-size);
+}
+
+p {
+    padding-bottom: 2rem;
+}
+
+li {
+    padding: 1rem 0;
+    list-style: none;
+}
+.list {
+    display: flex;
+}
+img {
+    
+    width: 150px;    
+    
+    align-self: self-end;
+    margin-left: 2rem;
+    
+}
+
+i {
+    color: var(--azure);
+    padding-right: 1rem;
+}
 </style>
