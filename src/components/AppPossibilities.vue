@@ -116,6 +116,7 @@ export default {
             </div>
         </div>        
     </section>
+    <hr>
 </template>
   
 
