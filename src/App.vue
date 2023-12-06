@@ -7,6 +7,7 @@ import AppToutoring from "./components/AppToutoring.vue";
 import CarouselHeader from "./components/CarouselHeader.vue";
 import AppPossibilities from "./components/AppPossibilities.vue";
 import AppCourses from "./components/AppCourses.vue";
+import AppPlans from "./components/AppPlans.vue";
 
 export default {
   components: {
@@ -17,7 +18,8 @@ export default {
     AppEmpowering,
     AppTestimonial,
     AppPossibilities,
-    AppCourses
+    AppCourses,
+    AppPlans
 },    
   
 }
@@ -36,6 +38,7 @@ export default {
   <AppTestimonial/>
   <AppPossibilities/>
   <AppCourses/>
+  <AppPlans/>
   <AppFooter/>
 </template>
 
